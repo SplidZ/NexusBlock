@@ -1,0 +1,37 @@
+prefix: "&8[&cNexusBlock&8] &7"
+nexuses:
+  DIAMOND_BLOCK:
+    blockId: 57
+
+    name: "&b&lDIAMANT NEXUS"
+    info: "Détruisez pour obtenir une récompense"
+
+    # Vie maximale du bloc
+    maxHealth: 10
+
+    # Nombre de destructions (A NE PAS TOUCHER)
+    health: 0
+
+    # Barre de vie en hologramme
+    healthBar: "{health}/{maxHealth}"
+
+    # Emplacement du bloc
+    location:
+      x: 10.0
+      y: 10.0
+      z: 10.0
+      yaw: 0.0
+      pitch: 0.0
+      world: "world"
+
+    # Récompense a chaque casse, commande; pourcentage% (A supprimer si vous le voulez.)
+    rewardsEveryBreak:
+      - "eco give {player} 100;5%"
+      - "none;95%"
+
+    # Récompenses après destruction
+    rewards:
+      - "say {player} win!"
+
+    # Réapparition après destruction (en secondes)
+    respawn: 5
